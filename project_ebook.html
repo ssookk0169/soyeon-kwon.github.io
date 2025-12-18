@@ -49,6 +49,26 @@
             <p class="text-lg text-purple-100 leading-relaxed max-w-2xl">
                 2021년 국민독서실태조사(성인) 6,000명 데이터를 활용한 머신러닝 기반 전자책 선호도 예측 및 핵심 영향 요인 도출
             </p>
+
+            <!-- 관련 파일 링크 버튼 그룹 -->
+            <div class="space-y-4">
+                <div class="flex flex-wrap gap-3">
+                    <a href="files/전자책_독서_선호_논문.pdf" target="_blank" class="px-5 py-2.5 bg-white text-purple-700 rounded-xl font-bold text-sm shadow-lg hover:bg-purple-50 transition flex items-center">
+                        <i class="fas fa-file-pdf mr-2 text-purple-500"></i> 논문 전문 (PDF)
+                    </a>
+                    <a href="files/전자책_독서_선호_최종코드.pdf" target="_blank" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl font-bold text-sm shadow-lg hover:bg-black transition flex items-center border border-purple-400/20">
+                        <i class="fas fa-code mr-2 text-purple-400"></i> R 분석 코드 (PDF)
+                    </a>
+                </div>
+                
+                <!-- 데이터 파일 다운로드 그룹 -->
+                <div class="flex flex-wrap gap-2 items-center bg-white/10 p-3 rounded-2xl border border-white/20 backdrop-blur-sm">
+                    <span class="text-xs font-bold text-purple-100 px-2 flex items-center"><i class="fas fa-database mr-2"></i> 데이터셋 :</span>
+                    <a href="files/2021_성인독서_데이터.csv" download class="px-3 py-1.5 bg-purple-50 text-purple-800 rounded-lg font-bold text-[11px] hover:bg-white transition">Raw Data</a>
+                    <a href="files/datafinal.csv" download class="px-3 py-1.5 bg-purple-50 text-purple-800 rounded-lg font-bold text-[11px] hover:bg-white transition">Final Data</a>
+                    <a href="files/indexes.csv" download class="px-3 py-1.5 bg-purple-50 text-purple-800 rounded-lg font-bold text-[11px] hover:bg-white transition">Sample Index</a>
+                </div>
+            </div>
         </div>
     </header>
 
