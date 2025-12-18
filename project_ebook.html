@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전자책 요인 분석 | 권소연</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <a href="index.html" class="inline-flex items-center text-purple-600 hover:underline mb-8 font-bold">
+            <i class="fas fa-arrow-left mr-2"></i> 메인으로 돌아가기
+        </a>
+        <header class="mb-12">
+            <span class="text-purple-600 font-bold tracking-widest uppercase text-sm">Machine Learning / R</span>
+            <h1 class="text-4xl font-extrabold mt-2 mb-4">전자책 독서 선호도 영향 요인 분석</h1>
+            <p class="text-slate-500"><i class="far fa-calendar-alt mr-2"></i>2023.09 - 2023.12</p>
+        </header>
+
+        <div class="grid gap-12">
+            <section>
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                    <i class="fas fa-book-open text-purple-500 mr-3"></i> 분석 개요
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-lg">국민독서실태조사 데이터를 기반으로 전자책 독서에 유의미한 영향을 미치는 요인을 머신러닝 모델링을 통해 분석하였습니다.</p>
+            </section>
+
+            <section class="bg-white p-8 rounded-2xl shadow-sm">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6">모델링 과정</h2>
+                <p class="text-slate-600 mb-6">로지스틱 회귀, SVM, 의사결정나무, 인공신경망(ANN) 등 다중 모형 비교.</p>
+                <div class="bg-purple-50 p-6 rounded-xl border border-purple-100">
+                    <h4 class="font-bold text-purple-900 mb-2">최종 모델: 인공신경망 (ANN) 축소모형</h4>
+                    <p class="text-purple-800">비선형 관계 학습에 최적화된 ANN을 활용하여 최상의 예측 성능을 도출하였습니다.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">핵심 요인</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-slate-200 rounded-full font-bold">나이</span>
+                    <span class="px-4 py-2 bg-slate-200 rounded-full font-bold">도서 선택 정보</span>
+                    <span class="px-4 py-2 bg-slate-200 rounded-full font-bold">독서 선호도</span>
+                    <span class="px-4 py-2 bg-slate-200 rounded-full font-bold">최종학력</span>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

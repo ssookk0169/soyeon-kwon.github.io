@@ -3,37 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project: Disease Prediction</title>
+    <title>질병 예측 프로젝트 | 권소연</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
-    <div class="max-w-4xl mx-auto px-4 py-12">
-        <a href="index.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8 font-medium">
-            <i class="fas fa-arrow-left mr-2"></i> Back to Home
+
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <!-- 메인으로 돌아가는 'A' 태그 (Back Link) -->
+        <a href="index.html" class="inline-flex items-center text-green-600 hover:text-green-800 mb-8 font-bold transition">
+            <i class="fas fa-arrow-left mr-2"></i> 메인으로 돌아가기
         </a>
+
         <header class="mb-12">
-            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full mb-4 inline-block">Award Winner (장려상)</span>
-            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">질병 진단 빈도 예측 알고리즘 개발</h1>
-            <p class="text-xl text-slate-600">국민건강영양조사 데이터를 이용한 건강 위험도 예측 모형 [cite: 6534]</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full border border-green-200">
+                    <i class="fas fa-medal mr-1"></i> Award Winner (장려상)
+                </span>
+                <span class="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-bold rounded-full border border-slate-300">
+                    Statistics & R
+                </span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4 leading-tight">
+                질병 진단 빈도 예측 알고리즘 개발 및 건강 위험도 모형 제안
+            </h1>
+            <p class="text-lg text-slate-600 font-medium">
+                국민건강영양조사 데이터를 활용한 다변량 통계 분석 및 예측 시스템 구축
+            </p>
+            
+            <!-- 외부 링크 버튼들 ('A' 태그 활용) -->
+            <div class="flex flex-wrap gap-3 mt-6">
+                <a href="#" class="inline-flex items-center bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition text-sm font-medium">
+                    <i class="fas fa-file-pdf mr-2"></i>발표 자료 (PDF)
+                </a>
+                <a href="#" class="inline-flex items-center border border-slate-300 bg-white text-slate-700 px-4 py-2 rounded-lg hover:bg-slate-50 transition text-sm font-medium">
+                    <i class="fab fa-github mr-2"></i>분석 코드 보기
+                </a>
+            </div>
         </header>
-        <div class="grid gap-8">
-            <section class="bg-white p-8 rounded-2xl shadow-sm">
-                <h2 class="text-2xl font-bold mb-4 text-slate-800">Problem & Goal</h2>
-                <p class="text-slate-600 leading-relaxed mb-4">개인의 생활 습관을 모두 파악하여 질병을 예방하기 어려운 현대 사회를 위해, 통계적 지침을 마련하고자 했습니다[cite: 6551, 6552].</p>
-                <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
-                    <p class="font-bold text-blue-700">핵심 목표: 개인의 건강 상태를 파악하여 질병 발생 확률이 높은 대상을 분류하는 예측 모형 제안 [cite: 5820]</p>
+
+        <div class="grid gap-12">
+            <!-- Role & Background -->
+            <section class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold mb-6 text-slate-900 flex items-center">
+                    <span class="w-10 h-10 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mr-4"><i class="fas fa-user-tag"></i></span>My Role
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <div>
+                            <strong class="block text-slate-900">데이터 전처리 및 변수 선정</strong>
+                            <p class="text-slate-600 text-sm">국민건강영양조사 원시 데이터에서 질병 진단에 유의미한 영향을 미치는 32개의 후보 변수를 추출하고 정제함.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <div>
+                            <strong class="block text-slate-900">다중공선성 해결 및 차원 축소</strong>
+                            <p class="text-slate-600 text-sm">변수 간 상관관계 문제를 해결하기 위해 요인분석과 주성분분석(PCA)을 병행하고 최적의 기법을 선택함.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <div>
+                            <strong class="block text-slate-900">예측 모형 구축 및 검증</strong>
+                            <p class="text-slate-600 text-sm">포아송 회귀 모형과 Lasso 기반의 Variable Selection을 수행하여 최종 예측 알고리즘 제안.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Analysis Process -->
+            <section class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold mb-6 text-slate-900 flex items-center">
+                    <i class="fas fa-stream text-green-500 mr-3"></i> Development Process
+                </h2>
+                <div class="relative border-l-2 border-slate-200 ml-4 space-y-10 py-2">
+                    <div class="pl-8 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-green-500 rounded-full ring-4 ring-white"></div>
+                        <h4 class="font-bold text-slate-900 mb-1">1. 문제 정의 및 데이터 수집</h4>
+                        <p class="text-slate-600 text-sm">현대 사회의 중증 질환 예방을 위해 개인의 생활 습관 데이터를 기반으로 한 객관적인 위험도 지표 마련 목표 설정.</p>
+                    </div>
+                    <div class="pl-8 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-green-500 rounded-full ring-4 ring-white"></div>
+                        <h4 class="font-bold text-slate-900 mb-1">2. PCA & Factor Analysis</h4>
+                        <p class="text-slate-600 text-sm">다양한 임상 지표들 사이의 상관성을 분석하고, 정보 손실을 최소화하면서 모델의 복잡도를 줄이는 주성분 추출.</p>
+                    </div>
+                    <div class="pl-8 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-green-500 rounded-full ring-4 ring-white"></div>
+                        <h4 class="font-bold text-slate-900 mb-1">3. 모형 최적화 (Poisson & Variable Selection)</h4>
+                        <p class="text-slate-600 text-sm">분석에 적합한 변수만을 선택하기 위해 모형 축소(variable selection)를 직접 수행하고 가장 적합한 최종 모형 도출.</p>
+                    </div>
                 </div>
             </section>
-            <section class="bg-white p-8 rounded-2xl shadow-sm">
-                <h2 class="text-2xl font-bold mb-4 text-slate-800">Implementation Details</h2>
-                <ul class="space-y-4 text-slate-600">
-                    <li><strong>데이터 전처리:</strong> 32개 변수 선정 및 다중공선성 해결을 위한 요인분석 및 PCA 수행[cite: 5821, 6561].</li>
-                    <li><strong>모델링:</strong> 포아송 회귀 모형과 Lasso 회귀 분석을 통한 변수 선택 및 모형 최적화[cite: 6536, 6941].</li>
-                    <li><strong>결과 분석:</strong> 식사량, 연령, BMI, 요당 수치 등이 질병 위험에 미치는 영향 규명[cite: 6538].</li>
-                </ul>
+
+            <!-- Result & Insight -->
+            <section class="bg-slate-900 text-white p-8 rounded-3xl shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 flex items-center text-green-400">
+                    <i class="fas fa-lightbulb mr-3"></i> Result & Insight
+                </h2>
+                <div class="space-y-4">
+                    <p class="leading-relaxed text-slate-300">
+                        "단순히 질병 발생 여부만 따지는 것을 넘어, **생활 패턴과 생체 지표가 질병 진단 빈도에 미치는 영향**을 정량적으로 입증하였습니다. 이 과정을 통해 실제 데이터의 성격에 따라 PCA와 요인분석 중 어떤 기법이 더 적합한지 고민하며 분석가의 판단력을 기를 수 있었습니다."
+                    </p>
+                    <p class="leading-relaxed text-slate-300">
+                        "프로젝트 결과 교내 진로탐색프로젝트에서 **장려상**을 수상하였으며, 통계적 근거를 바탕으로 한 건강 가이드라인 제시 능력을 인정받았습니다."
+                    </p>
+                </div>
             </section>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-slate-400 text-xs border-t border-slate-200 mt-20">
+        <p>© 2025 Soyeon Kwon. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

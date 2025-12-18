@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>심부전 생존 분석 | 권소연</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .bg-gradient-header {
+            background: linear-gradient(135deg, #ef4444 0%, #991b1b 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <!-- Back Button -->
+        <a href="index.html" class="inline-flex items-center text-red-600 hover:text-red-800 mb-8 font-bold transition">
+            <i class="fas fa-arrow-left mr-2"></i> 메인으로 돌아가기
+        </a>
+
+        <!-- Header -->
+        <header class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 bg-red-100 text-red-700 text-xs font-bold rounded-full uppercase border border-red-200">
+                    Survival Analysis
+                </span>
+                <span class="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-bold rounded-full border border-slate-300">
+                    R Language
+                </span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4 leading-tight">
+                심부전 환자 생존 분석 및 주요 사망 위험 요인 규명 연구
+            </h1>
+            <p class="text-lg text-slate-600 font-medium">
+                통계적 생존 모형을 활용한 심부전 데이터의 위험률 검정 및 생존 예측
+            </p>
+            <div class="mt-6 flex items-center text-slate-500 text-sm">
+                <i class="far fa-calendar-alt mr-2"></i> 2024.11 - 2024.12
+            </div>
+        </header>
+
+        <div class="grid gap-12">
+            <!-- Project Overview -->
+            <section class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold mb-6 text-slate-800 flex items-center">
+                    <i class="fas fa-info-circle text-red-500 mr-3"></i> 연구 개요
+                </h2>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    심부전(Heart Failure)은 심장의 구조적/기능적 이상으로 인해 전신에 혈액을 충분히 공급하지 못하는 만성 질환입니다. 
+                    본 연구는 파키스탄 파이살라바드 지역 병원의 심부전 환자 데이터를 기반으로 **사망 위험에 결정적인 영향을 미치는 요인**을 파악하고, 
+                    입원 초기 환자 관리의 중요성을 통계적으로 입증하고자 수행되었습니다.
+                </p>
+                <div class="bg-red-50 p-6 rounded-2xl border-l-4 border-red-500">
+                    <h4 class="font-bold text-red-900 mb-2 underline">주요 발견 (Key Finding)</h4>
+                    <p class="text-red-800 text-sm leading-relaxed">
+                        전체 환자군 분석 결과, **입원 후 초기 70일간의 사망 위험률이 가장 높게 나타남**을 확인하였습니다. 
+                        이는 심부전 환자의 경우 퇴원 후 초기 집중 모니터링이 생존율 향상에 매우 중요한 요소임을 시사합니다.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Analysis Process -->
+            <section class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold mb-6 text-slate-800 flex items-center">
+                    <i class="fas fa-tools text-red-500 mr-3"></i> 데이터 분석 단계 및 기법
+                </h2>
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold text-sm">1</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1">비모수적 생존 추정</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                **Kaplan-Meier** 및 **Nelson-Aalen** 추정법을 활용하여 성별, 고혈압, 당뇨 등 주요 범주형 변수에 따른 생존율 차이를 시각화하고 **로그 순위 검정(Log-rank test)**을 통해 유의성을 검증했습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold text-sm">2</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1">최적 모형 선정 (Cox PH Model)</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                모든 변수를 포함한 완전모형에서 **단계적 선택법(Stepwise Selection)**을 적용하여 불필요한 변수를 제거하였습니다. 
+                                이후 **비례위험 가정(Proportional Hazards Assumption)** 검정과 **다중공선성** 점검을 거쳐 모형의 신뢰도를 확보했습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center flex-shrink-0 mr-4 font-bold text-sm">3</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1">위험 요인 해석</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                최종 선정된 Cox 모형의 **위험비(Hazard Ratio)**를 분석하여 특정 수치 변화가 사망 위험에 미치는 기여도를 정량적으로 해석했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl">
+                <h2 class="text-2xl font-bold mb-8 flex items-center">
+                    <i class="fas fa-chart-line text-red-400 mr-3"></i> 최종 분석 결과 및 시사점
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="p-5 bg-slate-800 rounded-2xl border border-slate-700">
+                        <span class="text-red-400 text-xs font-bold uppercase mb-2 block">가장 유의미한 변수</span>
+                        <h4 class="text-xl font-bold mb-2">심박출률 (EF)</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">심박출량이 낮을수록 사망 위험이 지수적으로 증가함을 입증하여, 관리의 최우선 지표임을 확인했습니다.</p>
+                    </div>
+                    <div class="p-5 bg-slate-800 rounded-2xl border border-slate-700">
+                        <span class="text-red-400 text-xs font-bold uppercase mb-2 block">추가 위험 요인</span>
+                        <h4 class="text-xl font-bold mb-2">나이 & 혈청 크레아티닌</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">고령 환자 및 신장 기능(크레아티닌 수치) 저하가 동반된 경우 생존 확률이 급격히 낮아짐을 통계적으로 증명했습니다.</p>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-800 pt-6">
+                    <p class="text-slate-300 leading-relaxed italic text-sm">
+                        "이 연구를 통해 데이터 기반의 환자 분류 체계를 제안할 수 있었으며, 
+                        고위험군 환자에게 의료 자원을 집중적으로 배분해야 할 명확한 통계적 근거를 마련하였습니다."
+                    </p>
+                </div>
+            </section>
+
+            <!-- Tech Stack & Tools -->
+            <section class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                <h3 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Used Methodology & Tech</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-slate-100 rounded-xl text-sm font-semibold text-slate-700 border border-slate-200">R (survival, survminer)</span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-xl text-sm font-semibold text-slate-700 border border-slate-200">Kaplan-Meier Estimation</span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-xl text-sm font-semibold text-slate-700 border border-slate-200">Cox PH Model</span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-xl text-sm font-semibold text-slate-700 border border-slate-200">Log-rank Test</span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-xl text-sm font-semibold text-slate-700 border border-slate-200">Stepwise Selection</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-slate-400 text-xs border-t border-slate-200 mt-20">
+        <p>© 2025 Soyeon Kwon. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

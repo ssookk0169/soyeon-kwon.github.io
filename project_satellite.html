@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>벼 탐지 프로젝트 | 권소연</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <a href="index.html" class="inline-flex items-center text-blue-600 hover:underline mb-8 font-bold">
+            <i class="fas fa-arrow-left mr-2"></i> 메인으로 돌아가기
+        </a>
+        <header class="mb-12">
+            <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">Deep Learning / KDT</span>
+            <h1 class="text-4xl font-extrabold mt-2 mb-4">위성 영상 기반 벼 재배 면적 탐지 AI 프로젝트</h1>
+            <p class="text-slate-500"><i class="far fa-calendar-alt mr-2"></i>2024.12.25 - 2025.07.25</p>
+        </header>
+
+        <div class="grid gap-12">
+            <section>
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center">
+                    <i class="fas fa-bullseye text-blue-500 mr-3"></i> 프로젝트 개요
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-lg">기존의 수작업 기반 재배 면적 조사는 막대한 비용과 시간이 소요됩니다. 이를 해결하기 위해 초고해상도 위성 영상을 활용하여 벼 재배지를 자동으로 탐지하는 딥러닝 모델을 구축하였습니다.</p>
+            </section>
+
+            <section class="bg-white p-8 rounded-2xl shadow-sm">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6">수행 내용</h2>
+                <ul class="space-y-4 text-slate-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1.5 mr-3"></i>
+                        <span>초고해상도 위성 데이터 전처리 및 데이터 증강(Augmentation) 수행</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1.5 mr-3"></i>
+                        <span>U-Net 아키텍처 기반 세그멘테이션 모델 설계</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1.5 mr-3"></i>
+                        <span>정규화 식생 지수(NDVI) 정보를 활용한 탐지 필터링 로직 개발</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
