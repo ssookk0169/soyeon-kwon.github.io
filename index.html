@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>권소연 | Data Analyst Portfolio</title>
+    <meta name="description" content="통계학적 통찰력과 데이터 분석 실무 역량을 갖춘 데이터 분석가 권소연의 포트폴리오입니다.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex-shrink-0 font-bold text-xl tracking-tight text-slate-900 hover:opacity-80 transition">
+                    SOYEON<span class="text-blue-600">.DATA</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Skills</a>
+                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projects</a>
+                    <a href="#contact" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-6 inline-block p-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg">
+                <img src="images/profile.jpg" alt="권소연 프로필" class="w-32 h-32 rounded-full border-4 border-white object-cover bg-white">
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight leading-tight">
+                데이터로 <span class="gradient-text">성장의 선순환</span>을 만드는<br>
+                분석가 권소연입니다.
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                <span class="font-semibold text-slate-800">통계학(Statistics)</span> 기반의 논리적 분석과<br> 
+                <span class="font-semibold text-slate-800">AI 실무 프로젝트</span> 경험을 결합하여 가치를 도출합니다.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition shadow-lg transform hover:-translate-y-0.5">Contact Me</a>
+                <a href="mailto:sok0169@naver.com" class="px-8 py-3 bg-white text-slate-900 border border-slate-300 font-semibold rounded-lg hover:bg-slate-50 transition shadow-sm transform hover:-translate-y-0.5 flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i>Email
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-xl font-bold text-blue-600 mb-8 flex items-center border-b pb-4"><i class="fas fa-briefcase w-8"></i> Experience</h3>
+                    <div class="space-y-8 relative pl-2">
+                        <div class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-slate-200"></div>
+                        <div class="relative pl-8">
+                            <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-sm ring-1 ring-blue-500"></div>
+                            <h4 class="font-bold text-slate-900 text-lg">서울대 빅데이터 핀테크 AI 전문가 과정</h4>
+                            <p class="text-sm text-slate-500 font-medium mb-2">2024.12 - 2025.07</p>
+                            <p class="text-slate-600">위성 영상 기반 벼 재배 면적 탐지 AI 프로젝트 수행 및 U-Net 모델 구축[cite: 8068].</p>
+                        </div>
+                        <div class="relative pl-8">
+                            <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-slate-400 rounded-full border-4 border-white shadow-sm ring-1 ring-slate-400"></div>
+                            <h4 class="font-bold text-slate-900 text-lg">나라살림연구소 (인턴)</h4>
+                            <p class="text-sm text-slate-500 font-medium mb-2">2024.01 - 2024.02</p>
+                            <p class="text-slate-600">연구원 대상 통계 프로그램 R을 활용한 분석 기법 강의 진행[cite: 5795, 8068].</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-xl font-bold text-purple-600 mb-8 flex items-center border-b pb-4"><i class="fas fa-graduation-cap w-8"></i> Education</h3>
+                    <div class="space-y-8 relative pl-2">
+                        <div class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-slate-200"></div>
+                        <div class="relative pl-8">
+                            <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-sm ring-1 ring-purple-500"></div>
+                            <h4 class="font-bold text-slate-900 text-lg">중앙대학교 일반대학원 석사</h4>
+                            <p class="text-sm text-slate-500 font-medium mb-2">2025.03 - 현재</p>
+                            <p class="text-slate-600">통계데이터사이언스학과 재학 중[cite: 5799, 8066].</p>
+                        </div>
+                        <div class="relative pl-8">
+                            <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-slate-400 rounded-full border-4 border-white shadow-sm ring-1 ring-slate-400"></div>
+                            <h4 class="font-bold text-slate-900 text-lg">덕성여자대학교 학사</h4>
+                            <p class="text-sm text-slate-500 font-medium mb-2">2020.03 - 2025.02</p>
+                            <p class="text-slate-600">정보통계학과(심화전공), 컴퓨터공학과(부전공)[cite: 5802, 5805].</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Skills & Certificates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center"><i class="fas fa-code text-slate-400 mr-3"></i>Tools</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-blue-50 text-blue-700 border border-blue-100 rounded-lg font-semibold shadow-sm">Python</span>
+                        <span class="px-4 py-2 bg-blue-50 text-blue-700 border border-blue-100 rounded-lg font-semibold shadow-sm">R</span>
+                        <span class="px-4 py-2 bg-green-50 text-green-700 border border-green-100 rounded-lg font-semibold shadow-sm">SPSS</span>
+                        <span class="px-4 py-2 bg-orange-50 text-orange-700 border border-orange-100 rounded-lg font-semibold shadow-sm">GA4</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center"><i class="fas fa-award text-slate-400 mr-3"></i>Certificates</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <li class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center space-x-3"><i class="fas fa-database text-blue-500 text-xl"></i><div><span class="block font-bold text-slate-800">ADsP</span><span class="text-xs text-slate-500">2024.03 취득 [cite: 5830]</span></div></li>
+                        <li class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center space-x-3"><i class="fas fa-chart-bar text-green-500 text-xl"></i><div><span class="block font-bold text-slate-800">사회조사분석사 2급</span><span class="text-xs text-slate-500">2024.09 취득 [cite: 5810]</span></div></li>
+                        <li class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center space-x-3"><i class="fas fa-language text-purple-500 text-xl"></i><div><span class="block font-bold text-slate-800">TOEIC Speaking IH</span><span class="text-xs text-slate-500">140점 [cite: 5835]</span></div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="project_satellite.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-bold rounded-full uppercase tracking-wide">Deep Learning</span>
+                            <span class="text-slate-400 text-sm"><i class="far fa-calendar-alt mr-1"></i>2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">위성 데이터 활용 벼 재배 면적 탐지</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">서울대 KDT 과정 중 통계청 협업 과제. 초고해상도 위성영상 전처리와 U-Net 기반 모델 개발 주도[cite: 8072].</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">U-Net</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Deep Learning</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="project_disease.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wide">Award Winner</span>
+                            <span class="text-slate-400 text-sm"><i class="far fa-calendar-alt mr-1"></i>2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">질병 진단 빈도 예측 알고리즘</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">국민건강영양조사 데이터 기반 요인분석 및 포아송 회귀 모델 구축. 진로탐색프로젝트 장려상 수상[cite: 5816, 6534].</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Poisson Regression</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Factor Analysis</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-white py-16 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-8">Let's Connect</h2>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
+                <a href="mailto:sok0169@naver.com" class="flex items-center px-6 py-3 bg-slate-800 rounded-full hover:bg-blue-600 transition group w-full sm:w-auto justify-center">
+                    <i class="fas fa-envelope mr-3 text-lg text-slate-300 group-hover:text-white"></i>
+                    <span class="font-medium">sok0169@naver.com</span>
+                </a>
+                <div class="flex items-center px-6 py-3 bg-slate-800 rounded-full w-full sm:w-auto justify-center">
+                    <i class="fas fa-phone mr-3 text-lg text-slate-300"></i>
+                    <span class="font-medium">010-8636-1782</span>
+                </div>
+            </div>
+            <p class="text-slate-500 text-sm">© 2025 Soyeon Kwon. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

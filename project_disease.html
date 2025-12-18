@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Disease Prediction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <a href="index.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8 font-medium">
+            <i class="fas fa-arrow-left mr-2"></i> Back to Home
+        </a>
+        <header class="mb-12">
+            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full mb-4 inline-block">Award Winner (장려상)</span>
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">질병 진단 빈도 예측 알고리즘 개발</h1>
+            <p class="text-xl text-slate-600">국민건강영양조사 데이터를 이용한 건강 위험도 예측 모형 [cite: 6534]</p>
+        </header>
+        <div class="grid gap-8">
+            <section class="bg-white p-8 rounded-2xl shadow-sm">
+                <h2 class="text-2xl font-bold mb-4 text-slate-800">Problem & Goal</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">개인의 생활 습관을 모두 파악하여 질병을 예방하기 어려운 현대 사회를 위해, 통계적 지침을 마련하고자 했습니다[cite: 6551, 6552].</p>
+                <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                    <p class="font-bold text-blue-700">핵심 목표: 개인의 건강 상태를 파악하여 질병 발생 확률이 높은 대상을 분류하는 예측 모형 제안 [cite: 5820]</p>
+                </div>
+            </section>
+            <section class="bg-white p-8 rounded-2xl shadow-sm">
+                <h2 class="text-2xl font-bold mb-4 text-slate-800">Implementation Details</h2>
+                <ul class="space-y-4 text-slate-600">
+                    <li><strong>데이터 전처리:</strong> 32개 변수 선정 및 다중공선성 해결을 위한 요인분석 및 PCA 수행[cite: 5821, 6561].</li>
+                    <li><strong>모델링:</strong> 포아송 회귀 모형과 Lasso 회귀 분석을 통한 변수 선택 및 모형 최적화[cite: 6536, 6941].</li>
+                    <li><strong>결과 분석:</strong> 식사량, 연령, BMI, 요당 수치 등이 질병 위험에 미치는 영향 규명[cite: 6538].</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
