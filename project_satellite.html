@@ -9,7 +9,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
         html { scroll-behavior: smooth; }
@@ -24,10 +23,10 @@
                 <a href="index.html" class="font-bold text-xl text-slate-900 hover:opacity-80 transition">
                     SOYEON<span class="text-blue-600">.DATA</span>
                 </a>
-                <div class="hidden md:flex space-x-8 text-sm font-medium">
-                    <a href="index.html#about" class="text-slate-600 hover:text-blue-600 transition-colors">About</a>
-                    <a href="index.html#projects" class="text-slate-600 hover:text-blue-600 transition-colors">Projects</a>
-                    <a href="index.html#contact" class="text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#about" class="text-slate-600 hover:text-blue-600 font-medium text-sm">About</a>
+                    <a href="index.html#projects" class="text-slate-600 hover:text-blue-600 font-medium text-sm">Projects</a>
+                    <a href="index.html#contact" class="text-slate-600 hover:text-blue-600 font-medium text-sm">Contact</a>
                 </div>
             </div>
         </div>
@@ -39,17 +38,14 @@
             <a href="index.html#projects" class="inline-flex items-center text-blue-200 hover:text-white transition mb-6 text-sm">
                 <i class="fas fa-arrow-left mr-2"></i> 프로젝트 목록으로
             </a>
-            
             <div class="flex flex-wrap gap-3 mb-4">
-                <span class="px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full uppercase tracking-wider">Semantic Segmentation</span>
-                <span class="px-3 py-1 bg-white/10 text-blue-200 text-xs font-medium rounded-full tracking-wide">2024.12 - 2025.07</span>
-                <span class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full shadow-sm">통계청 협업 프로젝트</span>
+                <span class="px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full uppercase">Semantic Segmentation</span>
+                <span class="px-3 py-1 bg-blue-500 text-white text-xs font-bold rounded-full">통계청 협업</span>
+                <span class="px-3 py-1 bg-white/10 text-blue-200 text-xs font-medium rounded-full">2024.12 - 2025.07</span>
             </div>
-            
             <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
                 위성영상-공간정보 융합활용을 통한<br>벼 재배 면적 추출 모델 개발
             </h1>
-            
             <p class="text-lg text-blue-100 leading-relaxed max-w-2xl">
                 고해상도 위성 이미지와 팜맵(Farm Map) 데이터를 활용하여 전국의 벼 재배 현황을 단시간 내에 파악하는 딥러닝 기반 탐지 시스템 구축
             </p>
@@ -57,9 +53,9 @@
     </header>
 
     <!-- Key Finding Banner -->
-    <div class="bg-gradient-to-r from-blue-700 to-indigo-800 py-5 shadow-inner border-y border-blue-900/20">
+    <div class="bg-gradient-to-r from-blue-700 to-indigo-800 py-5">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <p class="text-white font-bold flex items-center justify-center text-sm md:text-base tracking-tight">
+            <p class="text-white font-bold flex items-center justify-center text-sm">
                 <i class="fas fa-satellite mr-3 text-blue-300"></i>
                 핵심 성과: U-Net 최종 모델 고도화로 정밀도 0.654 달성 및 미구축 지역 공간정보 확장 예측 가능성 확인
             </p>
@@ -70,36 +66,35 @@
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <!-- Research Overview -->
+            <!-- Overview -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
                     <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
                         <i class="fas fa-map-marked-alt text-blue-600"></i>
                     </span>
-                    연구 배경 및 목적
+                    연구 개요
                 </h2>
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
                     <p class="text-slate-600 leading-relaxed mb-6">
                         통계청의 '벼 재배 면적 조사'는 국가 식량 수급 정책의 핵심 데이터입니다. 하지만 기존의 현장 방문 조사는 막대한 인력과 예산이 투입되며, 조사 주기가 길어 실시간 대응에 한계가 있었습니다. 
-                        본 프로젝트는 **고해상도 위성영상(.tif)**과 **공간정보(팜맵)**를 융합하여 딥러닝 모델을 개발함으로써, 현장 조사를 보완하고 전국 단위의 경지 현황을 신속하고 객관적으로 파악하는 것을 목적으로 수행되었습니다.
+                        본 프로젝트는 <strong>고해상도 위성영상(.tif)</strong>과 <strong>공간정보(팜맵)</strong>를 융합하여 딥러닝 모델을 개발함으로써, 현장 조사를 보완하고 전국 단위의 경지 현황을 신속하고 객관적으로 파악하는 것을 목적으로 수행되었습니다.
                     </p>
-                    
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div class="bg-slate-50 rounded-xl p-4 text-center border border-slate-100">
+                        <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-blue-600 mb-1">U-Net</div>
-                            <div class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">핵심 아키텍처</div>
+                            <div class="text-xs text-slate-500">핵심 아키텍처</div>
                         </div>
-                        <div class="bg-slate-50 rounded-xl p-4 text-center border border-slate-100">
+                        <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-blue-600 mb-1">512px</div>
-                            <div class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">패치 사이즈</div>
+                            <div class="text-xs text-slate-500">패치 사이즈</div>
                         </div>
-                        <div class="bg-slate-50 rounded-xl p-4 text-center border border-slate-100">
+                        <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-blue-600 mb-1">GIS</div>
-                            <div class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">좌표계 정합</div>
+                            <div class="text-xs text-slate-500">좌표계 정합</div>
                         </div>
-                        <div class="bg-slate-50 rounded-xl p-4 text-center border border-slate-100">
+                        <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-blue-600 mb-1">Raster</div>
-                            <div class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">라벨 전처리</div>
+                            <div class="text-xs text-slate-500">라벨 전처리</div>
                         </div>
                     </div>
                 </div>
@@ -108,141 +103,111 @@
             <!-- Methodology -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-microscope text-indigo-600"></i>
+                    <span class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-cogs text-green-600"></i>
                     </span>
-                    수행 내용 및 분석 프로세스
+                    분석 방법론
                 </h2>
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
-                    <div class="space-y-8">
+                    <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0 shadow-md">1</div>
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">1</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">데이터 전처리: Rasterization</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    Shapefile(.shp) 형식의 농경지 전자지도(팜맵) 폴리곤 데이터를 위성 이미지(.tif)의 공간 해상도 및 좌표계(EPSG:5179)에 맞춰 Rasterize하여 픽셀 단위 학습을 위한 Binary Mask를 생성했습니다.
-                                </p>
+                                <p class="text-slate-600 text-sm">Shapefile(.shp) 형식의 농경지 전자지도(팜맵) 폴리곤 데이터를 위성 이미지(.tif)의 공간 해상도 및 좌표계(EPSG:5179)에 맞춰 Rasterize하여 픽셀 단위 학습을 위한 Binary Mask를 생성</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0 shadow-md">2</div>
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">2</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">Sliding Window 기반 Tiling</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    대용량 위성 영상을 모델이 학습 가능한 크기(512×512)로 분할하기 위해 패치 작업을 수행했습니다. 이 과정에서 클래스 불균형(논 vs 비논) 해소를 위한 샘플링 전략을 적용했습니다.
-                                </p>
+                                <p class="text-slate-600 text-sm">대용량 위성 영상을 모델이 학습 가능한 크기(512×512)로 분할. 클래스 불균형(논 vs 비논) 해소를 위한 샘플링 전략 적용</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0 shadow-md">3</div>
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">3</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">U-Net 모델 고도화</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    Encoder-Decoder 구조와 Skip Connection을 활용해 공간 정보를 보존하는 **U-Net**을 베이스라인으로 설정했습니다. 초기 모델의 오탐지를 줄이기 위해 최종 3차 모델까지 반복적인 튜닝을 거쳤습니다.
-                                </p>
+                                <p class="text-slate-600 text-sm">Encoder-Decoder 구조와 Skip Connection을 활용해 공간 정보를 보존하는 U-Net을 베이스라인으로 설정. 초기 모델의 오탐지를 줄이기 위해 최종 3차 모델까지 반복적인 튜닝</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0 shadow-md">4</div>
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">4</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">후처리 및 성능 평가</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    예측 결과에 대해 **NDVI(정규화 식생 지수)** 임계값 필터링을 적용하여 시가지 및 산림 지역의 오탐지를 최소화했습니다. 최종적으로 Precision 0.6540을 확보하였습니다.
-                                </p>
+                                <p class="text-slate-600 text-sm">예측 결과에 대해 NDVI(정규화 식생 지수) 임계값 필터링을 적용하여 시가지 및 산림 지역의 오탐지를 최소화. 최종 Precision 0.6540 확보</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Results Visualization -->
+            <!-- Key Insights -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-eye text-indigo-600"></i>
+                    <span class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-lightbulb text-yellow-600"></i>
                     </span>
-                    예측 결과 시각화 비교
+                    연구 의의 및 기대효과
                 </h2>
-                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-                        <div class="space-y-3">
-                            <h4 class="font-bold text-slate-700 text-sm flex items-center"><i class="fas fa-image mr-2 text-slate-400"></i> 원본 및 초기 모델 예측</h4>
-                            <div class="bg-slate-100 aspect-video rounded-xl flex items-center justify-center text-slate-400 text-xs text-center p-4 italic border border-slate-200">
-                                시가지와 산림 영역에서<br>다수의 오탐지(False Positive) 발생
-                            </div>
-                        </div>
-                        <div class="space-y-3">
-                            <h4 class="font-bold text-slate-700 text-sm flex items-center"><i class="fas fa-magic mr-2 text-blue-500"></i> 최종 고도화 모델 예측</h4>
-                            <div class="bg-blue-50 aspect-video rounded-xl flex items-center justify-center text-blue-500 text-xs text-center p-4 italic border border-blue-200">
-                                벼 재배지 경계를 명확히 탐지하고<br>오탐지 영역을 획기적으로 개선
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 bg-slate-50 rounded-xl text-xs text-slate-500 leading-relaxed italic border-l-4 border-slate-300">
-                        * 통계청 보고서 시각화 데이터 기준: 초기 모델 대비 최종 모델에서 논(Rice) 클래스의 형태적 정밀도가 크게 향상되었으며, 특히 팜맵이 구축되지 않은 지역에서도 높은 예측력을 보였습니다.
-                    </div>
-                </div>
-            </section>
-
-            <!-- Technical Implications -->
-            <section class="mb-16">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-lightbulb text-yellow-400"></i>
-                    </span>
-                    성과 및 기대효과
-                </h2>
-                <div class="bg-slate-900 text-white rounded-3xl p-8 shadow-xl">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h4 class="text-blue-400 font-bold mb-4 flex items-center"><i class="fas fa-check-circle mr-2"></i> 기술적 성과</h4>
-                            <ul class="space-y-3 text-sm text-slate-300">
-                                <li class="flex items-start"><span class="text-blue-500 mr-2 font-bold">•</span> 고해상도 위성 데이터 처리 파이프라인 구축</li>
-                                <li class="flex items-start"><span class="text-blue-500 mr-2 font-bold">•</span> U-Net 기반 미세 경계 탐지 성능 고도화</li>
-                                <li class="flex items-start"><span class="text-blue-500 mr-2 font-bold">•</span> 공간정보 확장 예측을 통한 전국 모니터링 가능성 확인</li>
-                            </ul>
-                        </div>
-                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                            <h4 class="text-yellow-400 font-bold mb-3"><i class="fas fa-chart-pie mr-2"></i> 공공 가치</h4>
-                            <p class="text-slate-300 text-xs leading-relaxed italic">
-                                "수작업 중심의 조사를 자동화함으로써 국가 통계 생산 비용을 절감하고, 식량 안보 정책 수립을 위한 신속하고 객관적인 통계 데이터를 제공할 수 있습니다. 이는 공공 데이터 혁신의 우수 사례가 될 것입니다."
-                            </p>
-                        </div>
-                    </div>
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                            <span class="text-slate-700"><strong class="text-blue-700">고해상도 위성 데이터 처리 파이프라인</strong> 구축 및 자동화</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                            <span class="text-slate-700"><strong class="text-blue-700">U-Net 기반 미세 경계 탐지</strong> 성능 고도화</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                            <span class="text-slate-700"><strong class="text-blue-700">공간정보 확장 예측</strong>을 통한 전국 모니터링 가능성 확인</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-600 mr-3 mt-1"></i>
+                            <span class="text-slate-700">수작업 조사 자동화로 <strong class="text-blue-700">국가 통계 생산 비용 절감</strong> 및 식량 안보 정책 기여</span>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
             <!-- Tech Stack -->
             <section class="mb-16">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">Python</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">PyTorch</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">U-Net</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">Rasterio / GDAL</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">Semantic Segmentation</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">GIS Alignment</span>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                    <span class="w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-tools text-slate-600"></i>
+                    </span>
+                    사용 기술 및 방법론
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Python</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">PyTorch</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">U-Net</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Rasterio / GDAL</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Semantic Segmentation</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">GIS Alignment</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">NDVI Filtering</span>
                 </div>
             </section>
 
-            <!-- Navigation Links -->
+            <!-- Navigation -->
             <div class="flex justify-between items-center pt-8 border-t border-slate-200">
-                <a href="project_disease.html" class="inline-flex items-center text-slate-500 hover:text-blue-600 transition font-bold text-sm">
+                <a href="project_disease.html" class="inline-flex items-center text-slate-600 hover:text-blue-600 transition font-medium">
                     <i class="fas fa-arrow-left mr-2"></i> 이전 프로젝트
                 </a>
-                <a href="project_heart.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition font-bold text-sm">
+                <a href="project_heart.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition font-medium">
                     다음 프로젝트 <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
-
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800 text-center">
-        <div class="max-w-4xl mx-auto px-4 text-xs text-slate-500">
-            <p>© 2025 Soyeon Kwon. All rights reserved.</p>
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-xs">© 2025 Soyeon Kwon. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>

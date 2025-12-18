@@ -9,7 +9,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
         html { scroll-behavior: smooth; }
@@ -39,17 +38,14 @@
             <a href="index.html#projects" class="inline-flex items-center text-emerald-100 hover:text-white transition mb-6 text-sm">
                 <i class="fas fa-arrow-left mr-2"></i> 프로젝트 목록으로
             </a>
-            
             <div class="flex flex-wrap gap-3 mb-4">
-                <span class="px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full uppercase tracking-wider">Poisson Regression</span>
-                <span class="px-3 py-1 bg-white/10 text-emerald-100 text-xs font-medium rounded-full tracking-wide">2024.03 - 2024.08</span>
-                <span class="px-3 py-1 bg-yellow-400 text-emerald-900 text-xs font-bold rounded-full shadow-sm"><i class="fas fa-medal mr-1"></i> 장려상 수상</span>
+                <span class="px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full uppercase">Poisson Regression</span>
+                <span class="px-3 py-1 bg-yellow-400 text-emerald-900 text-xs font-bold rounded-full"><i class="fas fa-medal mr-1"></i> 장려상 수상</span>
+                <span class="px-3 py-1 bg-white/10 text-emerald-100 text-xs font-medium rounded-full">2024.03 - 2024.08</span>
             </div>
-            
             <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
                 질병 진단 빈도 예측 알고리즘 개발 및<br>개인 건강 위험도 모형 제안
             </h1>
-            
             <p class="text-lg text-emerald-50 leading-relaxed max-w-2xl">
                 2022 국민건강영양조사 데이터를 활용하여 생활 습관과 생체 지표가 질병 발생에 미치는 영향을 정량적으로 규명한 연구
             </p>
@@ -57,9 +53,9 @@
     </header>
 
     <!-- Key Finding Banner -->
-    <div class="bg-gradient-to-r from-emerald-600 to-teal-600 py-5 shadow-inner">
+    <div class="bg-gradient-to-r from-emerald-600 to-teal-600 py-5">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <p class="text-white font-bold flex items-center justify-center text-sm md:text-base tracking-tight">
+            <p class="text-white font-bold flex items-center justify-center text-sm">
                 <i class="fas fa-notes-medical mr-3 text-yellow-300"></i>
                 핵심 결과: '식습관별 연령대', '요당', 'BMI' 순으로 질병 진단 빈도에 강력한 영향력 확인
             </p>
@@ -70,13 +66,13 @@
     <main class="py-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <!-- Research Overview -->
+            <!-- Overview -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
                     <span class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-3">
                         <i class="fas fa-stethoscope text-emerald-600"></i>
                     </span>
-                    연구 배경 및 목적
+                    연구 개요
                 </h2>
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
                     <p class="text-slate-600 leading-relaxed mb-6">
@@ -85,23 +81,22 @@
                         <strong>질병관리청의 2022년 국민건강영양조사</strong> 데이터를 정밀 분석하여, 
                         개인의 생활 양식과 유전 요인을 바탕으로 질병 위험도를 예측하고 고위험군을 분류할 수 있는 통계적 가이드라인을 제안했습니다.
                     </p>
-                    
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-emerald-600 mb-1">6,265개</div>
-                            <div class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">분석 관측치</div>
+                            <div class="text-xs text-slate-500">분석 관측치</div>
                         </div>
                         <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-emerald-600 mb-1">32개</div>
-                            <div class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">초기 변수</div>
+                            <div class="text-xs text-slate-500">초기 변수</div>
                         </div>
                         <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-emerald-600 mb-1">PCA</div>
-                            <div class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">차원 축소</div>
+                            <div class="text-xs text-slate-500">차원 축소</div>
                         </div>
                         <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-emerald-600 mb-1">Poisson</div>
-                            <div class="text-[10px] text-slate-500 uppercase font-bold tracking-tighter">회귀 모형</div>
+                            <div class="text-xs text-slate-500">회귀 모형</div>
                         </div>
                     </div>
                 </div>
@@ -110,58 +105,50 @@
             <!-- Methodology -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-vial text-blue-600"></i>
+                    <span class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-cogs text-green-600"></i>
                     </span>
-                    분석 프로세스
+                    분석 방법론
                 </h2>
                 <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
-                    <div class="space-y-8">
+                    <div class="space-y-6">
                         <div class="flex items-start">
                             <div class="w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">1</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">데이터 전처리 및 변수 추출</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    623개의 원시 변수 중 질병 진단 수와 연관된 32개 변수 선정. 청소년 관측치 제거 및 결측치 정제를 통해 분석 데이터셋 구축.
-                                </p>
+                                <p class="text-slate-600 text-sm">623개의 원시 변수 중 질병 진단 수와 연관된 32개 변수 선정. 청소년 관측치 제거 및 결측치 정제를 통해 분석 데이터셋 구축</p>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div class="w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">2</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">다중공선성 해결 및 요인분석</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    변수 간 높은 상관성 발견. <strong>주성분분석(PCA)</strong>과 <strong>요인분석(Factor Analysis)</strong>을 수행하여 모델의 복잡도를 줄이고 정보 손실을 최소화하는 요인 변수 생성.
-                                </p>
+                                <p class="text-slate-600 text-sm">변수 간 높은 상관성 발견. <strong>주성분분석(PCA)</strong>과 <strong>요인분석(Factor Analysis)</strong>을 수행하여 모델의 복잡도를 줄이고 정보 손실을 최소화하는 요인 변수 생성</p>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div class="w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">3</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">모형 적합 및 변수 선택</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    종속변수의 특성(진단 개수, Count)에 맞춰 **포아송 회귀 모형** 적용. Lasso 회귀 및 단계적 선택법(Stepwise)을 사용하여 최적의 변수 조합 도출.
-                                </p>
+                                <p class="text-slate-600 text-sm">종속변수의 특성(진단 개수, Count)에 맞춰 <strong>포아송 회귀 모형</strong> 적용. Lasso 회귀 및 단계적 선택법(Stepwise)을 사용하여 최적의 변수 조합 도출</p>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <div class="w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">4</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">성능 평가 및 모형 확정</h4>
-                                <p class="text-slate-600 text-sm leading-relaxed">
-                                    AIC 및 MSE 지표를 기준으로 4개의 후보 모형 비교. 설명변수의 개수가 적으면서도 설명력이 우수한 '요인분석 기반 단계적 선택 포아송 모형' 최종 선정.
-                                </p>
+                                <p class="text-slate-600 text-sm">AIC 및 MSE 지표를 기준으로 4개의 후보 모형 비교. 설명변수의 개수가 적으면서도 설명력이 우수한 '요인분석 기반 단계적 선택 포아송 모형' 최종 선정</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Model Comparison Table -->
+            <!-- Model Comparison -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-chart-bar text-indigo-600"></i>
+                    <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-balance-scale text-blue-600"></i>
                     </span>
                     모형 성능 비교
                 </h2>
@@ -169,100 +156,105 @@
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm">
                             <thead>
-                                <tr class="border-b-2 border-slate-100">
-                                    <th class="text-left py-4 px-2 font-bold text-slate-700">분석 모형</th>
-                                    <th class="text-center py-4 px-2 font-bold text-slate-700">설명변수 수</th>
-                                    <th class="text-center py-4 px-2 font-bold text-slate-700">MSE</th>
-                                    <th class="text-center py-4 px-2 font-bold text-slate-700">AIC</th>
+                                <tr class="border-b border-slate-200">
+                                    <th class="text-left py-3 px-2 font-bold text-slate-700">분석 모형</th>
+                                    <th class="text-center py-3 px-2 font-bold text-slate-700">설명변수 수</th>
+                                    <th class="text-center py-3 px-2 font-bold text-slate-700">MSE</th>
+                                    <th class="text-center py-3 px-2 font-bold text-slate-700">AIC</th>
                                 </tr>
                             </thead>
-                            <tbody class="text-slate-600">
-                                <tr class="border-b border-slate-50">
-                                    <td class="py-4 px-2">전체 변수 포함 모형</td>
-                                    <td class="text-center py-4 px-2">32개</td>
-                                    <td class="text-center py-4 px-2">1.194</td>
-                                    <td class="text-center py-4 px-2">7266.3</td>
+                            <tbody>
+                                <tr class="border-b border-slate-100">
+                                    <td class="py-3 px-2">전체 변수 포함 모형</td>
+                                    <td class="text-center py-3 px-2">32개</td>
+                                    <td class="text-center py-3 px-2">1.194</td>
+                                    <td class="text-center py-3 px-2">7266.3</td>
                                 </tr>
-                                <tr class="border-b border-slate-50">
-                                    <td class="py-4 px-2">Lasso 변수 선택 모형</td>
-                                    <td class="text-center py-4 px-2">18개</td>
-                                    <td class="text-center py-4 px-2">1.205</td>
-                                    <td class="text-center py-4 px-2">7241.2</td>
+                                <tr class="border-b border-slate-100">
+                                    <td class="py-3 px-2">Lasso 변수 선택 모형</td>
+                                    <td class="text-center py-3 px-2">18개</td>
+                                    <td class="text-center py-3 px-2">1.205</td>
+                                    <td class="text-center py-3 px-2">7241.2</td>
                                 </tr>
-                                <tr class="bg-emerald-50/50">
-                                    <td class="py-4 px-2 font-bold text-emerald-800">요인분석+단계적 선택법</td>
-                                    <td class="text-center py-4 px-2 font-bold text-emerald-800">9개</td>
-                                    <td class="text-center py-4 px-2 font-bold text-emerald-800">1.221</td>
-                                    <td class="text-center py-4 px-2 font-bold text-emerald-800">7207.5</td>
+                                <tr class="bg-emerald-50">
+                                    <td class="py-3 px-2 font-bold text-emerald-700">요인분석+단계적 선택법</td>
+                                    <td class="text-center py-3 px-2 font-bold text-emerald-700">9개</td>
+                                    <td class="text-center py-3 px-2 font-bold text-emerald-700">1.221</td>
+                                    <td class="text-center py-3 px-2"><span class="bg-emerald-600 text-white px-2 py-1 rounded-full text-xs">✓ 7207.5</span></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p class="text-xs text-slate-400 mt-4 italic">*최종 모형은 변수 개수가 가장 적고 AIC가 낮아 모델의 간결성과 해석력이 가장 뛰어난 것으로 평가됨.</p>
+                    <p class="text-xs text-slate-400 mt-4 italic">*최종 모형은 변수 개수가 가장 적고 AIC가 낮아 모델의 간결성과 해석력이 가장 뛰어남</p>
                 </div>
             </section>
 
-            <!-- Final Insights -->
+            <!-- Key Insights -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-lightbulb text-amber-600"></i>
+                    <span class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-lightbulb text-yellow-600"></i>
                     </span>
-                    주요 영향 요인 및 시사점
+                    연구 의의 및 시사점
                 </h2>
-                <div class="bg-slate-900 text-white rounded-3xl p-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h4 class="text-emerald-400 font-bold mb-4 flex items-center"><i class="fas fa-arrow-up mr-2"></i> 위험 증가 요인</h4>
-                            <ul class="space-y-3 text-sm text-slate-300">
-                                <li class="flex items-start"><span class="text-emerald-500 mr-2 font-bold">1.</span> 연령대가 높고 식사 빈도가 불규칙할수록 위험 급증</li>
-                                <li class="flex items-start"><span class="text-emerald-500 mr-2 font-bold">2.</span> 요당 검출 및 체질량지수(BMI) 수치 상승</li>
-                                <li class="flex items-start"><span class="text-emerald-500 mr-2 font-bold">3.</span> 혈관 탄력도 저하를 나타내는 맥압(Pulse Pressure) 증가</li>
-                                <li class="flex items-start"><span class="text-emerald-500 mr-2 font-bold">4.</span> 하루 중 착석 시간이 길수록 질병 진단율 상승</li>
-                            </ul>
-                        </div>
-                        <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-                            <h4 class="text-yellow-400 font-bold mb-3"><i class="fas fa-clipboard-check mr-2"></i> 결론</h4>
-                            <p class="text-slate-300 text-xs leading-relaxed italic">
-                                "개인의 생활 양식과 생체 지표를 기반으로 한 건강 위험도 예측 모형은 질병의 조기 진단 및 예방 가이드라인 수립에 기여할 수 있습니다. 
-                                특히 고위험군을 분류하여 맞춤형 생활 습관 개선안을 제안하는 데이터 기반 건강 관리 시스템의 기초를 마련하였습니다."
-                            </p>
-                        </div>
-                    </div>
+                <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-8 border border-emerald-100">
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3 mt-1"></i>
+                            <span class="text-slate-700"><strong class="text-emerald-700">연령대와 식습관</strong>이 질병 진단 빈도에 가장 큰 영향력 확인</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3 mt-1"></i>
+                            <span class="text-slate-700"><strong class="text-emerald-700">요당 검출, BMI 수치</strong> 등 생체 지표가 질병 위험도와 강한 연관성</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3 mt-1"></i>
+                            <span class="text-slate-700"><strong class="text-emerald-700">하루 착석 시간</strong>이 길수록 질병 진단율 상승</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-emerald-600 mr-3 mt-1"></i>
+                            <span class="text-slate-700">개인 맞춤형 <strong class="text-emerald-700">건강 위험도 예측 모형</strong> 및 고위험군 분류 기준 제안</span>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
-            <!-- Tech Stack Tags -->
+            <!-- Tech Stack -->
             <section class="mb-16">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">R Programming</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">Factor Analysis</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">Poisson Regression</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">PCA</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">Lasso Regression</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-slate-700 shadow-sm border border-slate-100">Stepwise Selection</span>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                    <span class="w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-tools text-slate-600"></i>
+                    </span>
+                    사용 기술 및 방법론
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">R</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Factor Analysis</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">PCA</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Poisson Regression</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Lasso Regression</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Stepwise Selection</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">AIC/MSE</span>
                 </div>
             </section>
 
-            <!-- Navigation Links -->
+            <!-- Navigation -->
             <div class="flex justify-between items-center pt-8 border-t border-slate-200">
-                <a href="project_ebook.html" class="inline-flex items-center text-slate-500 hover:text-emerald-600 transition font-bold text-sm">
+                <a href="project_ebook.html" class="inline-flex items-center text-slate-600 hover:text-emerald-600 transition font-medium">
                     <i class="fas fa-arrow-left mr-2"></i> 이전 프로젝트
                 </a>
-                <a href="project_satellite.html" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 transition font-bold text-sm">
+                <a href="project_satellite.html" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 transition font-medium">
                     다음 프로젝트 <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
-
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800 text-center">
-        <div class="max-w-4xl mx-auto px-4">
-            <p class="text-slate-500 text-[10px]">© 2025 Soyeon Kwon. All rights reserved.</p>
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-xs">© 2025 Soyeon Kwon. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>

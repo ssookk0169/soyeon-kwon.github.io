@@ -9,7 +9,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
         html { scroll-behavior: smooth; }
@@ -39,16 +38,13 @@
             <a href="index.html#projects" class="inline-flex items-center text-orange-200 hover:text-white transition mb-6 text-sm">
                 <i class="fas fa-arrow-left mr-2"></i> 프로젝트 목록으로
             </a>
-            
             <div class="flex flex-wrap gap-3 mb-4">
                 <span class="px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full uppercase">Time Series Analysis</span>
                 <span class="px-3 py-1 bg-white/10 text-orange-200 text-xs font-medium rounded-full">2024.03 - 2024.06</span>
             </div>
-            
             <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
                 인삼 소비자물가지수에 대한<br>시계열 분석
             </h1>
-            
             <p class="text-lg text-orange-100 leading-relaxed max-w-2xl">
                 통계청 소비자물가조사 데이터(2009.01~2024.04)를 활용한 ARIMA 모형 구축 및 2025년 12월까지 인삼 가격 추세 예측
             </p>
@@ -85,7 +81,6 @@
                         본 연구는 인삼 소비자물가지수 데이터를 분석하여 실제로 하락세가 지속될 것인지 예측하고, 
                         대응책 마련을 위한 유용한 정보를 제공하고자 수행되었습니다.
                     </p>
-                    
                     <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
                         <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-orange-600 mb-1">184개</div>
@@ -103,64 +98,6 @@
                             <div class="text-2xl font-bold text-orange-600 mb-1">SARIMA</div>
                             <div class="text-xs text-slate-500">최종 모형</div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Research Background -->
-            <section class="mb-16">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-lightbulb text-yellow-600"></i>
-                    </span>
-                    연구 배경
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                        <h3 class="font-bold text-orange-600 mb-3 flex items-center">
-                            <i class="fas fa-leaf mr-2"></i> 인삼의 가치
-                        </h3>
-                        <ul class="text-slate-600 text-sm space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-orange-400 mr-2 mt-1 text-xs"></i>
-                                면역력 증진 건강기능식품 수요 1위 (59.7%)
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-orange-400 mr-2 mt-1 text-xs"></i>
-                                한국 인삼 사포닌 함량 1.45% (세계 최고)
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-orange-400 mr-2 mt-1 text-xs"></i>
-                                사포닌 종류 22종 (타국 대비 월등)
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-orange-400 mr-2 mt-1 text-xs"></i>
-                                대한민국 대표 특산품
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                        <h3 class="font-bold text-red-600 mb-3 flex items-center">
-                            <i class="fas fa-exclamation-triangle mr-2"></i> 현재 위기 상황
-                        </h3>
-                        <ul class="text-slate-600 text-sm space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-times text-red-500 mr-2 mt-1 text-xs"></i>
-                                10년간 인삼 가격 40% 하락
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-times text-red-500 mr-2 mt-1 text-xs"></i>
-                                생산 농가 급감
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-times text-red-500 mr-2 mt-1 text-xs"></i>
-                                접근성 저하 및 활용도 감소
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-times text-red-500 mr-2 mt-1 text-xs"></i>
-                                1500년 인삼 산업 붕괴 위기 (KBS 뉴스)
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </section>
@@ -196,9 +133,7 @@
                             <div class="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 flex-shrink-0">3</div>
                             <div>
                                 <h4 class="font-bold text-slate-900 mb-1">모형 식별 (ACF/PACF 분석)</h4>
-                                <p class="text-slate-600 text-sm">
-                                    ACF와 PACF 그래프를 통해 AR, MA 차수 결정. 12시점 주기성 확인 → 계절 ARIMA 모형 고려
-                                </p>
+                                <p class="text-slate-600 text-sm">ACF와 PACF 그래프를 통해 AR, MA 차수 결정. 12시점 주기성 확인 → 계절 ARIMA 모형 고려</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -268,103 +203,11 @@
                 </div>
             </section>
 
-            <!-- Final Model -->
+            <!-- Key Insights -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-star text-red-600"></i>
-                    </span>
-                    최종 모형
-                </h2>
-                <div class="bg-slate-900 text-white rounded-2xl p-8">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-orange-400 mb-2">ARIMA(2,1,0)(0,1,1)₁₂</h3>
-                        <p class="text-slate-400 text-sm">Seasonal ARIMA with 12-month periodicity</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="bg-slate-800 rounded-xl p-5">
-                            <h4 class="font-bold text-orange-400 mb-3">모형 구성</h4>
-                            <ul class="text-slate-300 text-sm space-y-2">
-                                <li><strong>AR(2):</strong> 자기회귀 2차</li>
-                                <li><strong>I(1):</strong> 1차 차분</li>
-                                <li><strong>MA(0):</strong> 이동평균 없음</li>
-                                <li><strong>계절 MA(1):</strong> 계절 이동평균 1차</li>
-                                <li><strong>계절 차분:</strong> 12개월 주기</li>
-                            </ul>
-                        </div>
-                        <div class="bg-slate-800 rounded-xl p-5">
-                            <h4 class="font-bold text-orange-400 mb-3">모수 추정 결과</h4>
-                            <ul class="text-slate-300 text-sm space-y-2">
-                                <li><strong>AR1:</strong> 0.37762 (p < 0.0001)</li>
-                                <li><strong>AR2:</strong> 0.18822 (p = 0.0150)</li>
-                                <li><strong>MA1 (계절):</strong> 0.85494 (p < 0.0001)</li>
-                                <li><strong>평균 (MU):</strong> 0 (유의하지 않음)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Forecast Results -->
-            <section class="mb-16">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-chart-area text-blue-600"></i>
-                    </span>
-                    예측 결과 (2024.05 ~ 2025.12)
-                </h2>
-                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                        <div class="bg-orange-50 rounded-xl p-4 text-center">
-                            <div class="text-sm text-slate-500 mb-1">2024년 8월 (최고점)</div>
-                            <div class="text-xl font-bold text-orange-600">95.18</div>
-                        </div>
-                        <div class="bg-blue-50 rounded-xl p-4 text-center">
-                            <div class="text-sm text-slate-500 mb-1">2024년 12월</div>
-                            <div class="text-xl font-bold text-blue-600">91.07</div>
-                        </div>
-                        <div class="bg-red-50 rounded-xl p-4 text-center">
-                            <div class="text-sm text-slate-500 mb-1">2025년 12월 (최저점)</div>
-                            <div class="text-xl font-bold text-red-600">89.60</div>
-                        </div>
-                    </div>
-                    <div class="p-4 bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl border border-orange-200">
-                        <h4 class="font-bold text-orange-900 mb-2">예측 결과 요약</h4>
-                        <ul class="text-orange-800 text-sm space-y-1">
-                            <li>• <strong>12개월 주기</strong>로 증가와 감소를 반복</li>
-                            <li>• 5~8월 상승 → 9~12월 하락 패턴</li>
-                            <li>• 전체적으로 <strong>하락 추세</strong> 지속 전망</li>
-                            <li>• 95% 신뢰구간: 시간이 지남에 따라 폭이 넓어짐</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Tech Stack -->
-            <section class="mb-16">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-tools text-slate-600"></i>
-                    </span>
-                    사용 기술 및 방법론
-                </h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">SAS</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">PROC ARIMA</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Seasonal ARIMA</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Log Transformation</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">차분 (Differencing)</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">ACF/PACF</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Ljung-Box Test</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">AIC/SBC</span>
-                </div>
-            </section>
-
-            <!-- Implications -->
-            <section class="mb-16">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-lightbulb text-indigo-600"></i>
+                    <span class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-lightbulb text-yellow-600"></i>
                     </span>
                     연구 의의 및 시사점
                 </h2>
@@ -390,6 +233,26 @@
                 </div>
             </section>
 
+            <!-- Tech Stack -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                    <span class="w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-tools text-slate-600"></i>
+                    </span>
+                    사용 기술 및 방법론
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">SAS</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">PROC ARIMA</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Seasonal ARIMA</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Log Transformation</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">차분 (Differencing)</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">ACF/PACF</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Ljung-Box Test</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">AIC/SBC</span>
+                </div>
+            </section>
+
             <!-- Co-author -->
             <section class="mb-16">
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
@@ -407,7 +270,6 @@
                     다음 프로젝트 <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
-
         </div>
     </main>
 
@@ -417,7 +279,5 @@
             <p class="text-slate-500 text-xs">© 2025 Soyeon Kwon. All rights reserved.</p>
         </div>
     </footer>
-
-    
 </body>
 </html>

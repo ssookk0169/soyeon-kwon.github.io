@@ -9,7 +9,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
         html { scroll-behavior: smooth; }
@@ -39,22 +38,29 @@
             <a href="index.html#projects" class="inline-flex items-center text-purple-200 hover:text-white transition mb-6 text-sm">
                 <i class="fas fa-arrow-left mr-2"></i> 프로젝트 목록으로
             </a>
-            
             <div class="flex flex-wrap gap-3 mb-4">
                 <span class="px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full uppercase">Machine Learning</span>
-                <span class="px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full uppercase">팀 프로젝트 (팀장)</span>
+                <span class="px-3 py-1 bg-purple-500 text-white text-xs font-bold rounded-full">팀 프로젝트 (팀장)</span>
                 <span class="px-3 py-1 bg-white/10 text-purple-200 text-xs font-medium rounded-full">2023.09 - 2023.12</span>
             </div>
-            
             <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
                 전자책 독서 선호도에<br>영향을 주는 요인 분석
             </h1>
-            
             <p class="text-lg text-purple-100 leading-relaxed max-w-2xl">
                 2021년 국민독서실태조사(성인) 6,000명 데이터를 활용한 머신러닝 기반 전자책 선호도 예측 및 핵심 영향 요인 도출
             </p>
         </div>
     </header>
+
+    <!-- Key Finding Banner -->
+    <div class="bg-gradient-to-r from-purple-700 to-fuchsia-700 py-5">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-white font-bold flex items-center justify-center text-sm">
+                <i class="fas fa-brain mr-3 text-purple-300"></i>
+                최종 모델: 인공신경망(ANN) - AUC 0.89로 가장 높은 종합 예측력 달성
+            </p>
+        </div>
+    </div>
 
     <!-- Project Content -->
     <main class="py-16">
@@ -74,15 +80,14 @@
                         <strong>2021년 국민독서실태조사(성인)</strong> 데이터를 활용하여, 전자책 독서에 유의미한 영향을 미치는 요인을 다양한 머신러닝 기법으로 분석하였습니다.
                         이를 통해 출판업계와 독서 진흥 정책에 활용 가능한 인사이트를 도출하고자 하였습니다.
                     </p>
-                    
                     <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
                         <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-purple-600 mb-1">6,000명</div>
                             <div class="text-xs text-slate-500">분석 대상</div>
                         </div>
                         <div class="bg-slate-50 rounded-xl p-4 text-center">
-                            <div class="text-2xl font-bold text-purple-600 mb-1">53개</div>
-                            <div class="text-xs text-slate-500">조사 항목</div>
+                            <div class="text-2xl font-bold text-purple-600 mb-1">14개</div>
+                            <div class="text-xs text-slate-500">설명 변수</div>
                         </div>
                         <div class="bg-slate-50 rounded-xl p-4 text-center">
                             <div class="text-2xl font-bold text-purple-600 mb-1">4개</div>
@@ -92,129 +97,6 @@
                             <div class="text-2xl font-bold text-purple-600 mb-1">ANN</div>
                             <div class="text-xs text-slate-500">최종 모델</div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Research Background -->
-            <section class="mb-16">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-lightbulb text-pink-600"></i>
-                    </span>
-                    연구 배경 & 목적
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                        <h3 class="font-bold text-purple-600 mb-3 flex items-center">
-                            <i class="fas fa-chart-line mr-2"></i> 연구 배경
-                        </h3>
-                        <ul class="text-slate-600 text-sm space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-400 mr-2 mt-1 text-xs"></i>
-                                전자책 독서율 2.5%p 증가 추세
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-400 mr-2 mt-1 text-xs"></i>
-                                밀리의 서재 500만 회원 돌파, IPO 추진
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-400 mr-2 mt-1 text-xs"></i>
-                                공공도서관 전자책 서비스 확대
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-400 mr-2 mt-1 text-xs"></i>
-                                태블릿PC 보급으로 전자책 시장 급성장
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
-                        <h3 class="font-bold text-green-600 mb-3 flex items-center">
-                            <i class="fas fa-bullseye mr-2"></i> 연구 목적
-                        </h3>
-                        <ul class="text-slate-600 text-sm space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1 text-xs"></i>
-                                전자책 선호도에 영향을 미치는 핵심 요인 파악
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1 text-xs"></i>
-                                머신러닝 모델 비교를 통한 최적 예측 모형 도출
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1 text-xs"></i>
-                                독서 진흥 정책 수립을 위한 데이터 기반 근거 마련
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mr-2 mt-1 text-xs"></i>
-                                출판업계 타겟 마케팅 전략 제안
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Data Description -->
-            <section class="mb-16">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-database text-blue-600"></i>
-                    </span>
-                    데이터 설명
-                </h2>
-                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <h4 class="font-bold text-slate-900 mb-3">연속형 변수 (4개)</h4>
-                            <ul class="text-slate-600 text-sm space-y-2">
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                                    <strong>나이 (age)</strong>: 19-95세
-                                </li>
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                                    <strong>독서 선호도</strong>: 1-5점
-                                </li>
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                                    <strong>가구 소득</strong>: 1-8 (100만원 단위)
-                                </li>
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                                    <strong>여가시간</strong>: 60-1680분
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-slate-900 mb-3">범주형 변수 (10개)</h4>
-                            <ul class="text-slate-600 text-sm space-y-2">
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-fuchsia-500 rounded-full mr-2"></span>
-                                    독서 빈도, 성별, 독서 장소
-                                </li>
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-fuchsia-500 rounded-full mr-2"></span>
-                                    도서 선택 정보 (12개 범주)
-                                </li>
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-fuchsia-500 rounded-full mr-2"></span>
-                                    직업 (15개 범주), 지역
-                                </li>
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-fuchsia-500 rounded-full mr-2"></span>
-                                    도서관 이용, 독서활동, 독서동아리
-                                </li>
-                                <li class="flex items-center">
-                                    <span class="w-2 h-2 bg-fuchsia-500 rounded-full mr-2"></span>
-                                    최종학력 (8개 범주)
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-6 p-4 bg-purple-50 rounded-xl">
-                        <p class="text-purple-800 text-sm">
-                            <strong>종속변수:</strong> 전자책 선호 여부 (0: 종이책 선호, 1: 전자책 선호) - 전자책 선호 비율 약 11.85%
-                        </p>
                     </div>
                 </div>
             </section>
@@ -274,8 +156,8 @@
             <!-- Model Comparison -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-balance-scale text-orange-600"></i>
+                    <span class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-balance-scale text-blue-600"></i>
                     </span>
                     모델 성능 비교
                 </h2>
@@ -292,28 +174,28 @@
                         </thead>
                         <tbody>
                             <tr class="border-b border-slate-100">
-                                <td class="py-3 px-2 font-medium">정확도 (Accuracy)</td>
+                                <td class="py-3 px-2 font-medium">정확도</td>
                                 <td class="text-center py-3 px-2">0.8825</td>
                                 <td class="text-center py-3 px-2">0.8796</td>
                                 <td class="text-center py-3 px-2">0.8079</td>
                                 <td class="text-center py-3 px-2 bg-purple-50 font-bold">0.8796</td>
                             </tr>
                             <tr class="border-b border-slate-100">
-                                <td class="py-3 px-2 font-medium">민감도 (Sensitivity)</td>
+                                <td class="py-3 px-2 font-medium">민감도</td>
                                 <td class="text-center py-3 px-2">0.1849</td>
                                 <td class="text-center py-3 px-2">0.2843</td>
                                 <td class="text-center py-3 px-2">0.7740</td>
                                 <td class="text-center py-3 px-2 bg-purple-50">0.1301</td>
                             </tr>
                             <tr class="border-b border-slate-100">
-                                <td class="py-3 px-2 font-medium">특이도 (Specificity)</td>
+                                <td class="py-3 px-2 font-medium">특이도</td>
                                 <td class="text-center py-3 px-2">0.9791</td>
                                 <td class="text-center py-3 px-2">0.9621</td>
                                 <td class="text-center py-3 px-2">0.8126</td>
                                 <td class="text-center py-3 px-2 bg-purple-50 font-bold">0.9834</td>
                             </tr>
                             <tr class="border-b border-slate-100">
-                                <td class="py-3 px-2 font-medium">정밀도 (Precision)</td>
+                                <td class="py-3 px-2 font-medium">정밀도</td>
                                 <td class="text-center py-3 px-2">0.5510</td>
                                 <td class="text-center py-3 px-2">0.5092</td>
                                 <td class="text-center py-3 px-2">0.3639</td>
@@ -328,20 +210,14 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="mt-6 p-4 bg-gradient-to-r from-purple-50 to-fuchsia-50 rounded-xl border border-purple-200">
-                        <p class="text-purple-800 text-sm font-medium">
-                            <i class="fas fa-trophy text-yellow-500 mr-2"></i>
-                            <strong>최종 선정: 인공신경망(ANN) 축소모형</strong> - AUC 0.89로 가장 높은 종합 예측력 달성. 복잡한 비선형 관계 학습에 최적화.
-                        </p>
-                    </div>
                 </div>
             </section>
 
             <!-- Key Findings -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-star text-yellow-600"></i>
+                    <span class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-star text-orange-600"></i>
                     </span>
                     핵심 영향 요인 (변수 중요도 분석)
                 </h2>
@@ -382,33 +258,11 @@
                 </div>
             </section>
 
-            <!-- Tech Stack -->
+            <!-- Key Insights -->
             <section class="mb-16">
                 <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-tools text-slate-600"></i>
-                    </span>
-                    사용 기술 및 방법론
-                </h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">R</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Logistic Regression</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">SVM (e1071)</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Decision Tree (rpart)</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">ANN (nnet)</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">KNN 결측치 대체</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">카이제곱 검정</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">ROC/AUC</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">caret</span>
-                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">ggplot2</span>
-                </div>
-            </section>
-
-            <!-- Implications -->
-            <section class="mb-16">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-                    <span class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-3">
-                        <i class="fas fa-chart-line text-indigo-600"></i>
+                    <span class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-lightbulb text-yellow-600"></i>
                     </span>
                     연구 의의 및 활용 방안
                 </h2>
@@ -434,6 +288,27 @@
                 </div>
             </section>
 
+            <!-- Tech Stack -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                    <span class="w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-tools text-slate-600"></i>
+                    </span>
+                    사용 기술 및 방법론
+                </h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">R</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Logistic Regression</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">SVM (e1071)</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">Decision Tree</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">ANN (nnet)</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">KNN 결측치 대체</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">카이제곱 검정</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">ROC/AUC</span>
+                    <span class="px-4 py-2 bg-white rounded-xl text-sm font-medium text-slate-700 shadow-sm border border-slate-100">caret</span>
+                </div>
+            </section>
+
             <!-- Team Info -->
             <section class="mb-16">
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
@@ -455,7 +330,6 @@
                     다음 프로젝트 <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
-
         </div>
     </main>
 
@@ -465,6 +339,5 @@
             <p class="text-slate-500 text-xs">© 2025 Soyeon Kwon. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
