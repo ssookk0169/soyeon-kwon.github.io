@@ -49,8 +49,31 @@
             <p class="text-lg text-emerald-50 leading-relaxed max-w-2xl">
                 2022 국민건강영양조사 데이터를 활용하여 생활 습관과 생체 지표가 질병 발생에 미치는 영향을 정량적으로 규명한 연구
             </p>
+
+            <!-- 관련 파일 링크 버튼 그룹 -->
+            <div class="space-y-4">
+                <div class="flex flex-wrap gap-3">
+                    <a href="files/질병_진단_개수_논문.pdf" target="_blank" class="px-5 py-2.5 bg-white text-emerald-700 rounded-xl font-bold text-sm shadow-lg hover:bg-emerald-50 transition flex items-center">
+                        <i class="fas fa-file-pdf mr-2 text-emerald-500"></i> 논문 전문 (PDF)
+                    </a>
+                    <a href="files/질병_진단_개수_ppt.pdf" target="_blank" class="px-5 py-2.5 bg-emerald-800 text-white rounded-xl font-bold text-sm shadow-lg hover:bg-emerald-900 transition flex items-center border border-emerald-400/30">
+                        <i class="fas fa-file-powerpoint mr-2 text-yellow-400"></i> 발표 자료 (PPT)
+                    </a>
+                    <a href="files/질병_진단_개수_최종코드.pdf" target="_blank" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl font-bold text-sm shadow-lg hover:bg-black transition flex items-center">
+                        <i class="fas fa-code mr-2 text-emerald-400"></i> R 분석 코드 (PDF)
+                    </a>
+                </div>
+                
+                <!-- 데이터 파일 다운로드 그룹 -->
+                <div class="flex flex-wrap gap-2 items-center bg-white/10 p-3 rounded-2xl border border-white/20 backdrop-blur-sm">
+                    <span class="text-xs font-bold text-emerald-100 px-2 flex items-center"><i class="fas fa-database mr-2"></i> 데이터셋 :</span>
+                    <a href="files/maindata.csv" download class="px-3 py-1.5 bg-emerald-50 text-emerald-800 rounded-lg font-bold text-[11px] hover:bg-white transition">Main Data</a>
+                    <a href="files/name.csv" download class="px-3 py-1.5 bg-emerald-50 text-emerald-800 rounded-lg font-bold text-[11px] hover:bg-white transition">Variable Codebook</a>
+                    <a href="files/f.name.csv" download class="px-3 py-1.5 bg-emerald-50 text-emerald-800 rounded-lg font-bold text-[11px] hover:bg-white transition">Factor Mapping</a>
+                </div>
+            </div>
         </div>
-    </header>
+    </header>            
 
     <!-- Key Finding Banner -->
     <div class="bg-gradient-to-r from-emerald-600 to-teal-600 py-5">

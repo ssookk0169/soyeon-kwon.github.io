@@ -1,0 +1,13 @@
+﻿name,summary
+region,시도
+sex,성별
+LW_pr,임신경험여부
+marri_2,결혼상태
+npins,보험가입여부
+BH1,건강검진 수진 여부
+BS8_2,직장실내 간접흡연 노출 여부
+BS9_2,가정실내 간접흡연 노출 여부
+BS13,공공기관실내 간접흡연 노출 여부
+HE_Uglu,요당
+HE_Uket,요케톤
+HE_Ubld,요잠혈
