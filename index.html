@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>권소연 | Data Analyst Portfolio</title>
-    <meta name="description" content="통계학적 통찰력과 데이터 분석 실무 역량을 갖춘 데이터 분석가 권소연의 포트폴리오입니다.">
+    <meta name="description" content="통계적 통찰력과 데이터 분석 실무 역량을 갖춘 데이터 분석가 권소연의 포트폴리오입니다.">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; }
         .gradient-text {
@@ -15,111 +22,120 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
         html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-all duration-300 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <a href="index.html" class="flex-shrink-0 font-bold text-xl tracking-tight text-slate-900 hover:opacity-80 transition">
                     SOYEON<span class="text-blue-600">.DATA</span>
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Skills</a>
-                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projects</a>
-                    <a href="#contact" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">About</a>
+                    <a href="#activities" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Activities</a>
+                    <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Skills</a>
+                    <a href="#projects" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Projects</a>
+                    <a href="#contact" class="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="pt-32 pb-20 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Profile Image -->
             <div class="mb-6 inline-block p-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg">
                 <img src="images/소연_증명사진.jpg" alt="권소연 프로필" class="w-32 h-32 rounded-full border-4 border-white object-cover bg-white">
             </div>
+            
             <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight leading-tight">
-                데이터로 <span class="gradient-text">성장의 선순환</span>을 만드는<br>
-                분석가 권소연입니다.
+                데이터의 가치를 증명하는<br>
+                성장 파트너 <span class="gradient-text">권소연</span>입니다.
             </h1>
+            
             <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                <span class="font-semibold text-slate-800">통계학(Statistics)</span> 기반의 논리적 사고와<br> 
-                <span class="font-semibold text-slate-800">금융·AI 융합 분석</span> 경험을 통해 실무적 가치를 창출합니다.
+                <span class="font-semibold text-slate-800 italic">"동반 성장의 가치를 아는 분석가"</span><br>
+                복잡한 데이터에서 <span class="text-blue-600 font-bold">통계적 유의성</span>을 찾아내고,<br>
+                비즈니스의 문제를 해결하는 인사이트를 제안합니다.
             </p>
+            
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="px-8 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition shadow-lg transform hover:-translate-y-0.5">Contact Me</a>
+                <a href="#contact" class="px-8 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition shadow-lg transform hover:-translate-y-0.5">
+                    Contact Me
+                </a>
                 <a href="mailto:sok0169@naver.com" class="px-8 py-3 bg-white text-slate-900 border border-slate-300 font-semibold rounded-lg hover:bg-slate-50 transition shadow-sm transform hover:-translate-y-0.5 flex items-center justify-center">
-                    <i class="fas fa-envelope mr-2"></i>Email
+                    <i class="fas fa-envelope mr-2"></i>sok0169@naver.com
                 </a>
             </div>
         </div>
     </header>
 
+    <!-- About & Education -->
     <section id="about" class="py-20 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">About Me</h2>
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">About & Education</h2>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Education -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                    <h3 class="text-xl font-bold text-blue-600 mb-8 flex items-center border-b pb-4"><i class="fas fa-briefcase w-8"></i> Experience & Activities</h3>
+                    <h3 class="text-xl font-bold text-blue-600 mb-8 flex items-center border-b pb-4">
+                        <i class="fas fa-graduation-cap w-8"></i> 학력 (Education)
+                    </h3>
+                    
                     <div class="space-y-8 relative pl-2">
                         <div class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-slate-200"></div>
 
                         <div class="relative pl-8">
                             <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-sm ring-1 ring-blue-500"></div>
-                            <h4 class="font-bold text-slate-900 text-lg">서울대 빅데이터 핀테크 AI 전문가 과정 (KDT)</h4>
-                            <p class="text-sm text-slate-500 font-medium mb-2">2024.12.25 - 2025.07.25</p>
-                            <p class="text-slate-600 text-sm">위성 영상 기반 벼 재배 면적 탐지 AI 프로젝트 수행 및 U-Net 모델 구축을 통한 실무 역량 강화.</p>
-                        </div>
-
-                        <div class="relative pl-8">
-                            <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-blue-400 rounded-full border-4 border-white shadow-sm ring-1 ring-blue-400"></div>
-                            <h4 class="font-bold text-slate-900 text-lg">덕성튜터링 (수리통계학 멘토)</h4>
-                            <p class="text-sm text-slate-500 font-medium mb-2">2024.09 - 2024.12</p>
-                            <p class="text-slate-600 text-sm">통계학과 전공 필수 '수리통계학' 멘토링 진행. 난해한 개념을 쉽게 풀어 설명하고 매주 피드백을 제공하여 멘티들의 성적 향상 및 전공 자신감 고취에 기여. [cite: 9818, 9819]</p>
+                            <h4 class="font-bold text-slate-900 text-lg">중앙대학교 일반대학원</h4>
+                            <p class="text-sm text-slate-500 font-medium mb-1">2025.03 - 현재 | 석사 과정</p>
+                            <p class="text-slate-600 text-sm font-semibold">통계데이터사이언스학과</p>
                         </div>
 
                         <div class="relative pl-8">
                             <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-slate-400 rounded-full border-4 border-white shadow-sm ring-1 ring-slate-400"></div>
-                            <h4 class="font-bold text-slate-900 text-lg">대학생 아카데미 하나드림 2기</h4>
-                            <p class="text-sm text-slate-500 font-medium mb-2">2024.03.04 - 2024.07.31</p>
-                            <p class="text-slate-600 text-sm leading-relaxed">하나증권 주관 금융 투자 아카데미. 재무제표 해석을 통한 기업가치 평가 기법 습득 및 팀 프로젝트를 통한 금융 데이터 분석 기반 투자 전략 제안. [cite: 9813, 9814]</p>
-                        </div>
-
-                        <div class="relative pl-8">
-                            <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-slate-300 rounded-full border-4 border-white shadow-sm ring-1 ring-slate-300"></div>
-                            <h4 class="font-bold text-slate-900 text-lg">나라살림연구소 (인턴)</h4>
-                            <p class="text-sm text-slate-500 font-medium mb-2">2024.01 - 2024.02</p>
-                            <p class="text-slate-600 text-sm">현직 연구원 대상 통계 프로그램 R을 활용한 분석 기법 교육 및 실무 지식 공유.</p>
-                        </div>
-
-                        <div class="relative pl-8">
-                            <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-slate-200 rounded-full border-4 border-white shadow-sm ring-1 ring-slate-200"></div>
-                            <h4 class="font-bold text-slate-900 text-lg">교내 경제 동아리 'ISSUE'</h4>
-                            <p class="text-sm text-slate-500 font-medium mb-2">2023.09 - 2024.06</p>
-                            <p class="text-slate-600 text-sm">매주 경제 지표 및 산업 이슈 분석 활동. 특정 산업군 내 주요 기업의 재무 구조 및 시장 점유율 비교 분석을 통해 금융 시장 분석의 기초 프레임 확립. [cite: 9815, 9816]</p>
+                            <h4 class="font-bold text-slate-900 text-lg">덕성여자대학교</h4>
+                            <p class="text-sm text-slate-500 font-medium mb-1">2020.03 - 2025.02 | 학사 졸업</p>
+                            <p class="text-slate-600 text-sm">정보통계학과 (심화전공), 컴퓨터공학과 (부전공)</p>
+                            <p class="text-blue-600 text-xs mt-1 font-bold">GPA: 4.02 / 4.5</p>
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Career/Experience (KDT, NaraSalrim) -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                    <h3 class="text-xl font-bold text-purple-600 mb-8 flex items-center border-b pb-4"><i class="fas fa-graduation-cap w-8"></i> Education</h3>
+                    <h3 class="text-xl font-bold text-purple-600 mb-8 flex items-center border-b pb-4">
+                        <i class="fas fa-briefcase w-8"></i> Career & Experience
+                    </h3>
+                    
                     <div class="space-y-8 relative pl-2">
                         <div class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-slate-200"></div>
+
                         <div class="relative pl-8">
                             <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-sm ring-1 ring-purple-500"></div>
-                            <h4 class="font-bold text-slate-900 text-lg">중앙대학교 일반대학원 석사</h4>
-                            <p class="text-sm text-slate-500 font-medium mb-2">2025.03 - 현재</p>
-                            <p class="text-slate-600 text-sm">통계데이터사이언스학과 재학 중.</p>
+                            <h4 class="font-bold text-slate-900 text-lg">서울대 빅데이터 핀테크 AI 전문가 과정</h4>
+                            <p class="text-sm text-slate-500 font-medium mb-1">2024.12.25 - 2025.07.25 (7개월)</p>
+                            <p class="text-slate-600 text-sm leading-relaxed">위성 영상 기반 벼 재배 면적 탐지 AI 프로젝트 수행 및 U-Net 모델 구축을 통한 실무 역량 확보.</p>
                         </div>
+
                         <div class="relative pl-8">
                             <div class="absolute left-[4px] top-1.5 w-4 h-4 bg-slate-400 rounded-full border-4 border-white shadow-sm ring-1 ring-slate-400"></div>
-                            <h4 class="font-bold text-slate-900 text-lg">덕성여자대학교 학사</h4>
-                            <p class="text-sm text-slate-500 font-medium mb-2">2020.03 - 2025.02</p>
-                            <p class="text-slate-600 text-sm">정보통계학과(심화전공), 컴퓨터공학과(부전공).</p>
+                            <h4 class="font-bold text-slate-900 text-lg">나라살림연구소 (인턴)</h4>
+                            <p class="text-sm text-slate-500 font-medium mb-1">2024.01 - 2024.02 (2개월)</p>
+                            <p class="text-slate-600 text-sm leading-relaxed">현직 연구원을 대상으로 한 R 통계 프로그램 활용 강의 및 데이터 분석 보조.</p>
                         </div>
                     </div>
                 </div>
@@ -127,93 +143,202 @@
         </div>
     </section>
 
-    <section id="skills" class="py-20 bg-white border-y border-slate-100">
+    <!-- Detailed Activities Section -->
+    <section id="activities" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Skills & Certificates</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Major Activities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Hana Dream -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white transition-all duration-300 shadow-sm border-l-4 border-l-blue-600">
+                    <h4 class="font-bold text-lg text-slate-900 mb-2">하나증권 하나드림 아카데미 2기</h4>
+                    <p class="text-xs text-blue-600 font-bold mb-3">2024.03.04 - 2024.07.31</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">기업가치 평가, 재무제표 해석 및 금융 데이터 분석 실무 역량 습득. 팀 프로젝트를 통해 데이터 기반 투자 전략 제안.</p>
+                </div>
+                <!-- Duksung Tutoring -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white transition-all duration-300 shadow-sm border-l-4 border-l-purple-600">
+                    <h4 class="font-bold text-lg text-slate-900 mb-2">덕성튜터링 (수리통계학 멘토)</h4>
+                    <p class="text-xs text-purple-600 font-bold mb-3">2024.09 - 2024.12</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">전공 필수 '수리통계학'의 수학적 기초 정립을 위한 멘토링 주도. 개념 설명 및 예제 풀이를 통해 멘티 성적 향상 견인.</p>
+                </div>
+                <!-- Club ISSUE -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white transition-all duration-300 shadow-sm border-l-4 border-l-green-600">
+                    <h4 class="font-bold text-lg text-slate-900 mb-2">경제 동아리 'ISSUE'</h4>
+                    <p class="text-xs text-green-600 font-bold mb-3">2023.09 - 2024.06</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">매주 경제 뉴스 스크랩 및 산업별 기업 분석. 재무 구조 및 시장 점유율 분석을 통한 금융 시장 트렌드 파악.</p>
+                </div>
+                <!-- Project Award -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white transition-all duration-300 shadow-sm border-l-4 border-l-orange-600">
+                    <h4 class="font-bold text-lg text-slate-900 mb-2">교내 진로탐색프로젝트 장려상</h4>
+                    <p class="text-xs text-orange-600 font-bold mb-3">2024.03 - 2024.08</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">국민건강영양조사 데이터 기반 질병 진단 빈도 예측 모형 제안 및 PCA 분석 수행.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-16 text-center">Professional Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <!-- Tool Stack -->
                 <div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center"><i class="fas fa-code text-slate-400 mr-3"></i>Tools</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-blue-50 text-blue-700 border border-blue-100 rounded-lg font-semibold shadow-sm">Python</span>
-                        <span class="px-4 py-2 bg-blue-50 text-blue-700 border border-blue-100 rounded-lg font-semibold shadow-sm">R</span>
-                        <span class="px-4 py-2 bg-green-50 text-green-700 border border-green-100 rounded-lg font-semibold shadow-sm">SAS</span>
-                        <span class="px-4 py-2 bg-orange-50 text-orange-700 border border-orange-100 rounded-lg font-semibold shadow-sm">SPSS</span>
+                    <h3 class="text-xl font-bold mb-8 flex items-center text-blue-400">
+                        <i class="fas fa-terminal mr-3"></i> Analysis Tools
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <span class="block font-bold">Python</span>
+                            <span class="text-xs text-slate-400">Pandas, NumPy, DeepLearning</span>
+                        </div>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <span class="block font-bold">R</span>
+                            <span class="text-xs text-slate-400">Survival, Stats, Visualization</span>
+                        </div>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <span class="block font-bold">SAS</span>
+                            <span class="text-xs text-slate-400">Time-Series, Forecasting</span>
+                        </div>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 border-l-4 border-l-blue-500">
+                            <span class="block font-bold">SPSS</span>
+                            <span class="text-xs text-slate-400">Statistical Testing</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Certificates -->
                 <div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center"><i class="fas fa-award text-slate-400 mr-3"></i>Certificates</h3>
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <li class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center space-x-3 transition hover:border-blue-300"><i class="fas fa-database text-blue-500 text-xl"></i><div><span class="block font-bold text-slate-800 text-sm">ADsP</span><span class="text-xs text-slate-500">2024.03</span></div></li>
-                        <li class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center space-x-3 transition hover:border-blue-300"><i class="fas fa-chart-bar text-green-500 text-xl"></i><div><span class="block font-bold text-slate-800 text-sm">사회조사분석사 2급</span><span class="text-xs text-slate-500">2024.09</span></div></li>
-                        <li class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center space-x-3 transition hover:border-blue-300"><i class="fab fa-google text-orange-500 text-xl"></i><div><span class="block font-bold text-slate-800 text-sm">GA4</span><span class="text-xs text-slate-500">2024.09</span></div></li>
-                        <li class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center space-x-3 transition hover:border-blue-300"><i class="fas fa-language text-purple-500 text-xl"></i><div><span class="block font-bold text-slate-800 text-sm">TOEIC Speaking IH</span><span class="text-xs text-slate-500">140점</span></div></li>
+                    <h3 class="text-xl font-bold mb-8 flex items-center text-purple-400">
+                        <i class="fas fa-award mr-3"></i> Certificates
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-4 bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <div>
+                                <span class="font-bold">데이터분석준전문가 (ADsP)</span>
+                                <span class="text-xs text-slate-400 ml-2">2024.03</span>
+                            </div>
+                        </li>
+                        <!-- Added Python Cert -->
+                        <li class="flex items-center space-x-4 bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <i class="fab fa-python text-blue-400"></i>
+                            <div>
+                                <span class="font-bold">파이썬프로그래밍활용능력 2급</span>
+                                <span class="text-xs text-slate-400 ml-2">2024.08</span>
+                            </div>
+                        </li>
+                        <!-- Full Name GA4 -->
+                        <li class="flex items-center space-x-4 bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <i class="fab fa-google text-orange-400"></i>
+                            <div>
+                                <span class="font-bold">GA4 (Google Analytics 4)</span>
+                                <span class="text-xs text-slate-400 ml-2">2024.09</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center space-x-4 bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <i class="fas fa-chart-line text-purple-400"></i>
+                            <div>
+                                <span class="font-bold">사회조사분석사 2급</span>
+                                <span class="text-xs text-slate-400 ml-2">2024.09</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center space-x-4 bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <i class="fas fa-language text-blue-300"></i>
+                            <div>
+                                <span class="font-bold">TOEIC Speaking IH</span>
+                                <span class="text-xs text-slate-400 ml-2">2024.12</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="py-20 bg-slate-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Featured Projects</h2>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
+                <!-- 1. 위성 데이터 -->
                 <a href="project_satellite.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
                     <div class="p-8 flex-grow">
                         <div class="flex justify-between items-start mb-4">
                             <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full uppercase tracking-wide">Deep Learning</span>
-                            <span class="text-slate-400 text-sm">2024</span>
+                            <span class="text-slate-400 text-sm">2024.12 - 2025.07</span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">위성 영상 기반 벼 재배 면적 탐지</h3>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">통계청 협업 과제. 초고해상도 위성 영상 전처리 및 U-Net 모델 구축을 통한 자동 탐지 파이프라인 설계.</p>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">통계청 협업 과제. 초고해상도 위성 영상 데이터 전처리 및 U-Net 딥러닝 모델 구축을 통한 자동 탐지 파이프라인 설계.</p>
                         <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">U-Net</span>
-                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Python</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">U-Net</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Python</span>
                         </div>
                     </div>
                 </a>
 
+                <!-- 2. 심부전 생존 분석 -->
+                <a href="project_heart.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-red-100 text-red-700 text-xs font-bold rounded-full uppercase tracking-wide">Survival Analysis</span>
+                            <span class="text-slate-400 text-sm">2024.11 - 2024.12</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">심부전 환자 생존 분석 및 위험 요인 규명</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">Kaplan-Meier 및 Cox 비례위험모형을 활용한 생존율 예측. 심박출률, 나이, 혈청 크레아티닌 등 사망 위험 인자 입증.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Cox Proportional Hazard</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">R</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 3. 인삼 시계열 분석 (SAS Only) -->
                 <a href="project_cpi.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
                     <div class="p-8 flex-grow">
                         <div class="flex justify-between items-start mb-4">
                             <span class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-bold rounded-full uppercase tracking-wide">Time Series</span>
-                            <span class="text-slate-400 text-sm">2024</span>
+                            <span class="text-slate-400 text-sm">2024.03 - 2024.06</span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">인삼 소비자물가지수 시계열 예측</h3>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">SAS를 활용한 ARIMA 모형 분석. 12개월 계절 주기를 고려한 물가 변동성 파악 및 미래 트렌드 예측 모형 구축.</p>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">SAS를 활용한 ARIMA(2,1,0)(0,1,1) 모형 구축. 12개월 계절 주기 파악 및 로그 변환/차분을 통해 미래 가격 하락 추세 예측.</p>
                         <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">ARIMA</span>
-                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">SAS</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">ARIMA</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">SAS</span>
                         </div>
                     </div>
                 </a>
 
-                <a href="project_disease.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-                    <div class="p-8 flex-grow">
-                        <div class="flex justify-between items-start mb-4">
-                            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wide">Award Winner (장려상)</span>
-                            <span class="text-slate-400 text-sm">2024</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">질병 진단 빈도 예측 및 알고리즘 개발</h3>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">국민건강영양조사 데이터 활용. 요인분석(PCA)을 통한 차원 축소 및 포아송 회귀 모형 기반 건강 위험도 예측 알고리즘 제안. [cite: 9817, 9818]</p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Poisson Regression</span>
-                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">PCA</span>
-                        </div>
-                    </div>
-                </a>
-
+                <!-- 4. 전자책 요인 분석 -->
                 <a href="project_ebook.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
                     <div class="p-8 flex-grow">
                         <div class="flex justify-between items-start mb-4">
                             <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded-full uppercase tracking-wide">Machine Learning</span>
-                            <span class="text-slate-400 text-sm">2023</span>
+                            <span class="text-slate-400 text-sm">2023.09 - 2023.12</span>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">전자책 독서 선호도 영향 요인 분석</h3>
-                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">국민독서실태조사 데이터 분석. 로지스틱 회귀, SVM, ANN 등 다중 모형 비교를 통해 도서 선택에 미치는 핵심 요인 도출.</p>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">국민독서실태조사 데이터 분석. 로지스틱 회귀, SVM, ANN 중 인공신경망(ANN)을 통해 연령과 도서 선택 정보의 영향력 도출.</p>
                         <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">ANN</span>
-                            <span class="text-[10px] bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Classification</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">ANN</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">R</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 5. 질병 예측 -->
+                <a href="project_disease.html" class="group block bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-wide">Award Winner (장려상)</span>
+                            <span class="text-slate-400 text-sm">2024.03 - 2024.08</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">질병 진단 빈도 예측 알고리즘 개발</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">국민건강영양조사 데이터 활용. 요인분석 및 PCA를 통한 차원 축소와 포아송 회귀 모형 기반 건강 위험도 예측 알고리즘 제안.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">Poisson Regression</span>
+                            <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600 font-medium">PCA</span>
                         </div>
                     </div>
                 </a>
@@ -222,15 +347,16 @@
         </div>
     </section>
 
-    <footer id="contact" class="bg-slate-900 text-white py-16 border-t border-slate-800">
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-slate-900 text-white py-20 border-t border-slate-800">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold mb-8">Let's Connect</h2>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
-                <a href="mailto:sok0169@naver.com" class="flex items-center px-6 py-3 bg-slate-800 rounded-full hover:bg-blue-600 transition group w-full sm:w-auto justify-center">
-                    <i class="fas fa-envelope mr-3 text-lg text-slate-300 group-hover:text-white"></i>
+            <h2 class="text-2xl font-bold mb-12">Let's Connect</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto mb-12">
+                <a href="mailto:sok0169@naver.com" class="flex items-center justify-center px-6 py-4 bg-slate-800 rounded-xl hover:bg-blue-600 transition group">
+                    <i class="fas fa-envelope mr-3 text-lg group-hover:text-white text-slate-300"></i>
                     <span class="font-medium">sok0169@naver.com</span>
                 </a>
-                <div class="flex items-center px-6 py-3 bg-slate-800 rounded-full w-full sm:w-auto justify-center">
+                <div class="flex items-center justify-center px-6 py-4 bg-slate-800 rounded-xl">
                     <i class="fas fa-phone mr-3 text-lg text-slate-300"></i>
                     <span class="font-medium">010-8636-1782</span>
                 </div>
@@ -238,5 +364,6 @@
             <p class="text-slate-500 text-xs">© 2025 Soyeon Kwon. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
